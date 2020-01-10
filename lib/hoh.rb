@@ -13,18 +13,18 @@ PORTION_1 = {
     }
   }
 }
-# 
+
 PORTION_2 = {
   label: "Order"
 }
-# 
+
 PORTION_3 = {
   label: "Family",
   sub_category: {
     label: "Genus",
   }
 }
-# 
+
 PORTION_4 = {
   label: "Species",
   sub_category: nil
@@ -43,6 +43,7 @@ def naming_system
   # HoH all the way to Species!
   
   PORTION_1[:sub_category][:sub_category][:sub_category] = PORTION_2
+  PORTION_1[:sub_category][:sub_category][:sub_category][:sub_category] = PORTION_3
   PORTION_1
 
 end
